@@ -19,10 +19,11 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_hello_route_return_hello()
+    public function test_acceuil()
     {
         $response = $this->get('/');
 
         $response -> assertSee('<h1>The Office</h1>' , false);
+        $response -> assertSee('<a href="/salles">Accéder à la liste</a>' , false);
     }
 }
