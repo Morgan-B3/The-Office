@@ -1,6 +1,10 @@
 <?php
 
+
 use App\Http\Controllers\UserController;
+
+use App\Http\Controllers\ListeController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('salles',[ListeController::class, 'index']);
+Route::get('salle/{id}', [ListeController::class, 'show']);
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,6 +34,7 @@ Route::get('/hello', function () {
     ]);
 });
 
+
 //Inscription
 Route::get('/inscription', [UserController::class, 'create']);
 Route::post('/inscription', [UserController::class, 'register']);
@@ -33,3 +42,4 @@ Route::post('/inscription', [UserController::class, 'register']);
 //Connexion
 Route::get('/connexion', [UserController::class, 'login']);
 Route::post('/connexion', [UserController::class, 'authenticate']);
+
