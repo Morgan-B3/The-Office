@@ -25,5 +25,6 @@ class ExampleTest extends TestCase
 
         $response->assertSee('Hello Toto');
         $response->assertSee('<h1>Hello Toto</h1>', false); // le false permet de préciser à Laravel d'interpreter ça comme du HTML et non comme du htmlSpecialChars
+
     }
 }
