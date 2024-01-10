@@ -4,7 +4,7 @@
 
 <div>
 <h1 class="text-3xl text-center mb-3 font-bold underline">CineVille</h1> 
-<a class="text-xl hover:no-underline text-center font-bold underline ml-10 mb-8" href="/create">Ajoutez une Salle</a>
+<a class="text-xl hover:no-underline text-center font-bold underline ml-10 mb-8" href="/formulaire">Ajoutez une Salle</a>
 <a href="/" class="text-gray-500 flex gap-2 mb-3 hover:underline"> Accueil </a>
 </div>
 

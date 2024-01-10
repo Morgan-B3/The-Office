@@ -20,4 +20,7 @@ class ListeController extends Controller
 
         return view('show', ['salle' => $salle]);
     }
+
+  
+
 }

@@ -17,11 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/formulaire', function(){
-    return view('formulaire');
-});
+Route::get('/formulaire', [ContactController::class, 'create']);
 
-Route::post('/ajouter', [ContactController::class, 'enregistrer'])->name('ajouter_contact');
+Route::post('/formulaire', [ContactController::class, 'enregistrer'])->name('ajouter_contact');
 
 Route::get('/hello', function () {
     return view('hello',[

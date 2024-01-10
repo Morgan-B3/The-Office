@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
+
+
+    public function create()
+    {
+        return view('formulaire');
+    }
+
     public function enregistrer(Request $request)
     {
         $request->validate([
@@ -22,5 +29,8 @@ class ContactController extends Controller
         $contact->save();
 
         return redirect()->back()->with('C/est bon salut');
+      
+        return view('salles');
+    
 }
 }
