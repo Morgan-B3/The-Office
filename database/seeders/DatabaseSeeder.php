@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Salles;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,8 +12,27 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        Salles::factory(5)->create([
+            'nom'=> 'salle',
+            'numero' => 1
+        ]);
+        Salles::factory()->create([
+            'nom'=> 'salle',
+            'numero' => 2
+        ]);
+        Salles::factory()->create([
+            'nom'=> 'salle',
+            'numero' => 3
+        ]);
+        Salles::factory()->create([
+            'nom'=> 'salle',
+            'numero' => 4
+        ]);
+        Salles::factory()->create([
+            'nom'=> 'salle',
+            'numero' => 5
+        ]);
     }
 }
