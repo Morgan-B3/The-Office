@@ -23,6 +23,6 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/hello');
 
-        $response -> assertSee('<h1>Hello Toto</h1>' , false);
+        $response -> assertSee('<h1>The Office</h1>' , false);
     }
 }
