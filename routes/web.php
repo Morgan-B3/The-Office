@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('salles',[ListeController::class, 'index']);
 Route::get('salle/{id}', [ListeController::class, 'show']);
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('/hello', function () {
+    return view('hello',[
+        'name' => 'Toto',
+
+    ]);
+});
+
