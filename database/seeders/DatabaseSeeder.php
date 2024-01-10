@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Salles;
+use App\Models\Salle;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -34,5 +35,7 @@ class DatabaseSeeder extends Seeder
             'nom'=> 'salle',
             'numero' => 5
         ]);
+        Salle::factory(5)->create();
+
     }
 }
