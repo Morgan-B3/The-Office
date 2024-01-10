@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::post('/formulaire', function(){
     return view('formulaire');
 });
+
+Route::post('/ajouter', [ContactController::class, 'enregistrer'])->name('ajouter_contact');

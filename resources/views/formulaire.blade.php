@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+
+
+
+
     <form action="/ajouter" method="POST">
         @csrf 
     
