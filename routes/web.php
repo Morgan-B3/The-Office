@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AccueilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,10 @@ Route::get('/', function () {
         'name' => 'Toto',
     ]);
 });
+Route::get('/404', function () {
+    return view('error');
+});
+
+Route::get('/', [AccueilController::class, 'index']);
+
+
