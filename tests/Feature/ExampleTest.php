@@ -21,7 +21,7 @@ class ExampleTest extends TestCase
 
     public function test_hello_route_return_hello()
     {
-        $response = $this->get('/hello');
+        $response = $this->get('/');
 
         $response -> assertSee('<h1>The Office</h1>' , false);
     }
