@@ -18,7 +18,7 @@ class InscriptionTest extends TestCase
         $response = $this->get('/inscription');
 
         $response->assertStatus(200);
-
+        
 
     }
 }
